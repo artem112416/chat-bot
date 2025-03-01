@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Чат-бот</title>
+    <title>Чат-бот с выбором</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="chat-container">
         <div class="chat-box" id="chatBox">
-            <div class="chat-message bot-message">Здравствуйте! Чем я могу помочь?</div>
+            <div class="chat-message bot-message">Здравствуйте! Выберите вопрос, введя цифру от 1 до 5:</div>
+            <div class="chat-message bot-message">
+                1. Как тебя зовут?<br>
+                2. Какие языки ты знаешь?<br>
+                3. Что ты умеешь?<br>
+                4. Ты живой?<br>
+                5. Какой сегодня день?
+            </div>
         </div>
-        <input type="text" id="userInput" placeholder="Введите вопрос..." class="user-input" />
+        <input type="text" id="userInput" placeholder="Введите номер вопроса..." class="user-input" />
         <button onclick="sendMessage()" class="send-btn">Отправить</button>
     </div>
     <script src="script.js"></script>
